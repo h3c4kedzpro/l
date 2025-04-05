@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bunthy - DarkApp</title> <link rel="icon" type="image/x-icon" href="https://i.ibb.co/p6qW8wxT/IMG-20250126-184636-468.jpg">
-    <title>Bunthy - DarkApp</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
@@ -416,7 +415,15 @@
                 downloadUrl: "/YouTube_Premium.apk",
                 description: "Version - latest (18.9MB)>➡️Premium/Vip Features Unlocked 🔒>➡️All Ads Removed / Adfree>➡️Background Play Support >➡️Shorts Video Error Fixed >➡️Compatible for all Devices>➡️Optimized & Resources Cleaned>➡️All Debug Info Removed",
                 downloads: 100
-            }                                                                              
+            },
+            {
+                name: "Telegram Premium",
+                version: "56969",
+                logo: "/3_1.png",
+                downloadUrl: "/Telegram_Premium.apk",
+                description: "Version - latest (52.15M)",
+                downloads: 100
+            }
         ];
 
         // Format numbers function
@@ -437,7 +444,7 @@
                     <p class="app-description">${app.description}</p>
                     <div class="download-info">
                         <i class="fas fa-download"></i>
-                        <span>${formatNumber(app.downloads)} downloads</span>
+                        <span>${formatNumber(app.downloads)} ការទាញយក</span>
                     </div>
                     <button class="download-button" onclick="downloadApp('${app.downloadUrl}', '${app.name}')">
                         <i class="fas fa-download"></i> ទាញយក
