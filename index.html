@@ -22,7 +22,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', system-ui, sans-serif;
+            font-family: 'Courier New', system-ui, sans-serif;
         }
 
         body {
@@ -52,7 +52,39 @@
                 radial-gradient(circle at 0% 100%, var(--accent-green) 0%, transparent 50%);
             filter: blur(120px);
         }
+    .button-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        background-color: #000;
+        gap: 10px;
+    }
 
+    .menu-btn {
+        background-color: transparent;
+        border: 1px solid #00ff00;
+        color: #00ff00;
+        font-family: 'Courier New', monospace;
+        padding: 10px 20px;
+        border-radius: 6px;
+        box-shadow: 0 0 8px #00ff00;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .menu-btn:hover {
+        background-color: #00ff00;
+        color: #000;
+        font-weight: bold;
+        box-shadow: 0 0 16px #00ff00;
+    }
+
+    .copyright-btn {
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
         /* Header Styles */
         header {
             background: rgba(255, 255, 255, 0.8);
@@ -75,12 +107,12 @@
         }
 
         .logo {
-            font-size: 2rem;
-            font-weight: 800;
+            font-size: 3rem;
+            font-weight: 1000;
             background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            letter-spacing: -1px;
+            letter-spacing: -5px;
         }
 
         .search-container {
@@ -209,7 +241,7 @@
         }
 
         .app-name {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
             background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
@@ -393,10 +425,13 @@
             <!-- Apps will be dynamically loaded here -->
         </div>
     </main>
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Bunthy DarkApp. រក្សាសិទ្ធិគ្រប់យ៉ាង.</p>
-    </footer>
+<!-- Button Menu -->
+<div class="button-menu">
+    <!-- Other buttons -->
+    <button class="menu-btn copyright-btn">
+        &copy; 2025 Bunthy DarkApp
+    </button>
+</div>
     <script>
         // App data
         const apps = [
@@ -406,7 +441,7 @@
                 logo: "/img.png",
                 downloadUrl: "/DH HackBar_1.1.apk",
                 description: "DH HackBar is a Advanced Web Penetration Testing Tool for Android devices. It is developed by the ethical hacking team named Team Darknet Haxor.",
-                downloads: 900000
+                downloads: 9000000
             },
             {
                 name: "YouTube Premium",
